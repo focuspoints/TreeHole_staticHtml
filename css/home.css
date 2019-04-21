@@ -1,0 +1,224 @@
+	body {
+		background: #f7f7f9;
+	}
+	#home_bg_img{
+		position: fixed;
+		z-index: -2;
+		left: 0;
+		bottom: 0;
+	}
+	#home_bg {
+		height: 200px;
+		width: 940px;
+		margin: 10px auto;
+	}
+	#home_bg img{
+		height: 100%;
+	}
+
+	#User_Control{
+		width: 150px;
+		margin: 10px auto;
+	}
+	#User_Control p{
+		text-align: center;
+	}
+	#User_img,#User_img2 {
+		margin: 10px auto;	
+		width: 100px;
+		height: 100px;
+	}
+	#User_img img,#User_img2 img{
+		width: 100px;
+		height: 100px;
+		border: 1px solid #EEEEEE;
+		border-radius: 50px;
+	}
+
+
+	#page {
+		width: 940px;
+		padding: 20px;
+		margin: 0 auto;
+		background: white;
+	}
+	#sumbit{
+		margin: 0 0 10px 0;
+	}
+	#message-text{
+		max-width: 100%;
+	}
+	.panel {
+		display: none;
+		width: 220px;
+		padding: 20px;
+		background-color: #333;
+		color: #fff;
+		box-shadow: inset 0 0 5px 5px #222;
+	}
+	/*滚动窗口*/
+	
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	html,
+	body {
+		height: 100%;
+		font-family: '微软雅黑';
+		font-size: 14px;
+	}
+	
+	.sdiv {
+		padding: 5px 10px;
+		margin: 50px 0;
+		position: relative;
+	}
+	
+	.sdiv h1 {
+		-webkit-transform: translateY(50px);
+		-ms-transform: translateY(50px);
+		transform: translateY(50px);
+		-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+		transition: opacity 0.5s, -webkit-transform 0.5s;
+		-o-transition: transform 0.5s, opacity 0.5s;
+		transition: transform 0.5s, opacity 0.5s;
+		transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+		opacity: 0;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	.sdiv h1 img{
+		width: 50px;
+		height: 50px;
+		margin: 0 10px;
+		border: 1px solid #000000;
+		border-radius: 25px;
+	}
+	
+	.sdiv p {
+		-webkit-transform: translateY(30px);
+		-ms-transform: translateY(30px);
+		transform: translateY(30px);
+		-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+		transition: opacity 0.5s, -webkit-transform 0.5s;
+		-o-transition: transform 0.5s, opacity 0.5s;
+		transition: transform 0.5s, opacity 0.5s;
+		transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+		opacity: 0;
+		-webkit-transition-delay: 0.25s;
+		-o-transition-delay: 0.25s;
+		transition-delay: 0.25s;
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+	
+	.sdiv span {
+		-webkit-transform: translateY(30px);
+		-ms-transform: translateY(30px);
+		transform: translateY(30px);
+		-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+		transition: opacity 0.5s, -webkit-transform 0.5s;
+		-o-transition: transform 0.5s, opacity 0.5s;
+		transition: transform 0.5s, opacity 0.5s;
+		transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+		opacity: 0;
+		-webkit-transition-delay: 0.5s;
+		-o-transition-delay: 0.5s;
+		transition-delay: 0.5s;
+		font-size: 15px;
+		margin-bottom: 10px;
+		display: block;
+	}
+	
+	.sdiv.on h1,
+	.sdiv.on p,
+	.sdiv.on span {
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+	
+	.con {
+		width: auto;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+	
+	@media (min-width: 992px) {
+		.con {
+			width: 900px;
+		}
+	}
+	
+	.sdiv:nth-child(even) {
+		text-align: right;
+	}
+	
+	.sdiv_btn {
+		text-align: center;
+		margin: 100px 0;
+	}
+	
+	.sdiv_btn div {
+		width: 150px;
+		height: 50px;
+		line-height: 50px;
+		border: 1px solid #000;
+		font-size: 16px;
+		text-align: center;
+		margin: 0 auto;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+	
+	.sdiv_btn div:hover {
+		background: #000;
+		color: #fff;
+	}
+	
+	.sdiv .border-left {
+		width: 1px;
+		height: 0px;
+		background: #999;
+		position: absolute;
+		left: -1px;
+		bottom: 0;
+	}
+	
+	.sdiv .border-bottom {
+		width: 0px;
+		height: 1px;
+		background: #999;
+		position: absolute;
+		left: 0;
+		bottom: 0px;
+	}
+	
+	.sdiv .border-top {
+		width: 0px;
+		height: 1px;
+		background: #999;
+		position: absolute;
+		right: 0;
+		top: 0px;
+	}
+	
+	.sdiv .border-right {
+		width: 1px;
+		height: 0px;
+		background: #999;
+		position: absolute;
+		right: -1px;
+		top: 0;
+	}
+	
+
+	#user_info{
+		width: 400px;
+		margin: 5px auto;
+	}

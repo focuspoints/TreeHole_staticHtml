@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
+		<script src="js/isScroll.js"></script>
+	</head>
+
+	<body>
+		<div id="home_bg_img">
+			<img src="images/home_bg_img.jpg" />
+		</div>
+		<div id="home_bg">
+			<img src="images/logo_large.png" />
+		</div>
+		<!-- Centered page -->
+		<div id="page">
+			<h4><i class="fa fa-address-card-o fa-2x"></i>&nbsp;&nbsp;个人中心</h4>
+			<br />
+			<a id="left-panel-link" href="#left-panel">我要去别处转转</a>
+			<hr />
+			<div id="user_info">
+				<div id="user_info_display">
+					<div id="User_img2">
+						<img src="images/DSC_0243.jpg" />
+					</div>
+					<br />
+					<div class="form-group">
+						<label for="exampleInputName2">昵称：</label>
+						<p>被情伤了的痞子</p>
+					</div>
+					<br />
+					<div class="form-group">
+						<label for="exampleInputName2">邮箱：</label>
+						<p>122455@qq.com</p>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">分享故事数量：</label>
+						<p>9999+</p>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">被赞次数：</label>
+						<p>9999+</p>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">跟你有同感的人：</label>
+						<p>9999+</p>
+					</div>
+					<br />
+					<button class="btn btn-default" id="change">立即修改</button>
+				</div>
+				<div id="user_info_change" style="display: none;">
+					<br />
+					<div class="form-group">
+						<label for="exampleInputName2">昵称</label>
+						<input type="text" class="form-control" id="exampleInputName2" placeholder="例如：被情伤了的痞子">
+					</div>
+					<br />
+					<div class="form-group">
+						<label for="exampleInputEmail2">Email</label>
+						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="example@example.com">
+					</div>
+					<br />
+					<button class="btn btn-default" id="save">保存更改</button>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Left panel -->
+		<div id="left-panel" class="panel">
+			<div id="User_Control">
+				<div id="User_img">
+					<img src="images/DSC_0243.jpg" />
+				</div>
+				<p>admin</p>
+			</div>
+			<ul class="nav nav-pills  nav-stacked">
+				<li role="presentation">
+					<a href="home.html">情感树洞</a>
+				</li>
+				<li role="presentation" class="active">
+					<a href="user_control.html">个人中心</a>
+				</li>
+				<li role="presentation">
+					<a href="index.html">退出登录</a>
+				</li>
+			</ul>
+		</div>
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js">
+		</script>
+		<script src="js/jquery.panelslider.min.js"></script>
+		<script>
+			$('#left-panel-link').panelslider();
+		</script>
+		<script type="text/javascript">
+			$('#change').on('click',function(){
+				$('#user_info_display').fadeOut(0);
+				$('#user_info_change').fadeIn();
+			})
+			$('#save').on('click',function(){
+				$('#user_info_change').fadeOut(0);
+				$('#user_info_display').fadeIn();
+			})
+		</script>
+	</body>
+
+</html>
